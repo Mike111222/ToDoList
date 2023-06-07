@@ -95,7 +95,7 @@ class TaskList {
           ${task.name}
         </span>
         <button class="edit-btn">Edit</button>
-        <button class='delete-btn'>X</button>
+        <button class='delete-btn'><i class="fa fa-trash-o" aria-hidden="true"></i></button>
       `;
 
       const checkbox = taskElement.querySelector('input[type=checkbox]');
