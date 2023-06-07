@@ -1,4 +1,3 @@
-
 // This function takes an array of tasks and filters out the completed tasks.
 
 function clearCompletedTask(tasks) {
