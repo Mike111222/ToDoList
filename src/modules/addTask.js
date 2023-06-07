@@ -1,6 +1,4 @@
-
 import Task from './taskList.js';
-
 
 // This function takes a taskInput (presumably an HTML input element) and an
 // array of tasks.
