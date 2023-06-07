@@ -1,4 +1,3 @@
-
 import addTask from './addTask.js';
 
 import removeTask from './removeTask.js';
@@ -18,7 +17,7 @@ class TaskList {
     this.resetBtn = document.getElementById('reset');
 
     // Adding an event listener to the task form's submit event.
-    
+
     this.taskForm.addEventListener('submit', (e) => {
       e.preventDefault();
       this.tasks = addTask(this.taskInput, this.tasks);
@@ -28,7 +27,7 @@ class TaskList {
     });
 
     // Adding an event listener to the clear completed button's click event.
-    
+
     this.clearCompletedBtn.addEventListener('click', () => {
       this.tasks = clearCompletedTask(this.tasks);
       this.saveTasks();
@@ -49,12 +48,11 @@ class TaskList {
 
   // This method allows editing a task by calling the editTask function and
   // passing the necessary arguments.
-  
+
   editTask(id, newName) {
     editTask(id, newName, this.tasks, this.saveTasks.bind(this), this.displayTasks.bind(this));
   }
 
- 
   // This method removes a task by calling the removeTask function
   // and passing the necessary arguments.
   removeTask(id) {
@@ -71,7 +69,7 @@ class TaskList {
   }
 
   // This method removes all tasks from the tasks array.
- 
+
   resetTasks() {
     this.tasks = [];
     this.saveTasks();
@@ -84,9 +82,8 @@ class TaskList {
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 
- 
   // This method updates the task list in the DOM based on the tasks array.
-  
+
   displayTasks() {
     this.taskList.innerHTML = '';
     for (let i = 0; i < this.tasks.length; i += 1) {
