@@ -14,25 +14,24 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [ToDoList](#todolist)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[ToDo List\] ](#-todo-list-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [To run the project](#to-run-the-project)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -81,6 +80,7 @@
 - **[A Reset button is also there to reset all the tasks.]**
 - **[Webpack is managing all the dependencies and auto loading in browser]**
 - **[All the scetions and functionality is re-created by ES6 Modules]**
+- **[ToDo List is Interactive, checking and unchecking the checkbox is interactive.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +88,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- This is Awesome Books' project <a href="">Coming Soon</a>
+- This is ToDoList project's <a href="https://mike111222.github.io/ToDoList/">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
