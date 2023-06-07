@@ -53,12 +53,17 @@ form input[type='text'] {
   margin-right: 10px;
 }
 
+#task-input {
+  width: 80%;
+}
+
 /* submit button */
 
 form button[type='submit'] {
   padding: 10px;
+  font-size: 1rem;
   background-color: lightgrey;
-  color: black;
+  color: rgba(51, 49, 49, 0.8);
   border: none;
   border-radius: 5px;
   cursor: pointer;
