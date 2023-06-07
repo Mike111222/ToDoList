@@ -1,0 +1,131 @@
+/* styling of the to do list project */
+
+/* body styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* todo tasks form and buttons */
+
+#reset:hover {
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* todays container style  */
+
+.today-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+
+/* input button */
+
+.inputBtn {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+/* text fields input styles */
+
+form input[type='text'] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* submit button */
+
+form button[type='submit'] {
+  padding: 10px;
+  background-color: lightgrey;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* list container and list items styles */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid grey;
+}
+
+li input[type='checkbox'] {
+  margin-right: 12px;
+}
+
+li span {
+  margin-right: 12px;
+  flex: 1;
+}
+
+li button.delete-btn {
+  background-color: beige;
+  color: darkgrey;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+/* Clear Completed Button styles */
+
+#clear-completed {
+  width: 40%;
+  height: 3em;
+  background-color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: -1rem;
+  border-radius: 4px;
+}
+
+#clear-completed:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-color: rgba(243, 37, 37, 0.8);
+  color: #fff;
+}
+
+.clear-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* checkbox checked styles */
+
+.checked {
+  text-decoration: line-through;
+}
