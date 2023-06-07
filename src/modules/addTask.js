@@ -1,5 +1,5 @@
 // Importing the Task class from './task.js'
-import Task from './task.js';
+import Task from './taskList.js';
 
 // addTask function
 // This function takes a taskInput (presumably an HTML input element) and an array of tasks.
