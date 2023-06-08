@@ -69,6 +69,13 @@ form button[type='submit'] {
   cursor: pointer;
 }
 
+form button[type='submit']:hover,
+form button[type='submit']:active {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+  color: green;
+}
+
 /* list container and list items styles */
 
 ul {
@@ -104,6 +111,13 @@ li button.delete-btn {
   font-size: 1.2rem;
 }
 
+li button.delete-btn:hover,
+li button.delete-btn:active {
+  transform: scale(1.1);
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
 /* Clear Completed Button styles */
 
 #clear-completed {
@@ -113,7 +127,7 @@ li button.delete-btn {
   font-size: 1em;
   font-weight: 600;
   margin-top: -1rem;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 #clear-completed:hover {

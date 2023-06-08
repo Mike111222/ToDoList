@@ -1,7 +1,5 @@
 import addTask from './addTask.js';
-
 import removeTask from './removeTask.js';
-
 import { clearCompletedTask, toggleTaskStatus, editTask } from './clearToggleEditTask.js';
 
 // This class represents a task list and manages the functionality related to tasks.
