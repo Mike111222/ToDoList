@@ -33,14 +33,14 @@ describe('clearCompletedTask', () => {
 // Tests for the toggleTaskStatus function
 describe('toggleTaskStatus', () => {
   test('should return the same array if no task with the given id is found', () => {
-    // Test case: No task with the given id found,
+    // No task with the given id found,
     // expect the same array as the result
     const result = toggleTaskStatus(4, tasks);
     expect(result).toEqual(tasks);
   });
 
   test('should toggle the status of the task with the given id', () => {
-    // Test case: Toggle the status of the task with the given id
+    // Toggle the status of the task with the given id
     const result = toggleTaskStatus(2, tasks);
     expect(result).toEqual([
       { id: 1, name: 'Task 1', status: false },
@@ -57,14 +57,14 @@ describe('toggleTaskStatus', () => {
   });
 });
 
-// Tests for the editTask function
+// Tests editTask function
 describe('editTask', () => {
   // Mock functions for saveTasks and displayTasks
   const mockSaveTasks = jest.fn();
   const mockDisplayTasks = jest.fn();
 
   test('should update the name of a task given its ID', () => {
-    // Test case: Update the name of a task given its ID
+    // Update the name of a task given its ID
     const taskId = 2;
     const newName = 'New Task Name';
     editTask(taskId, newName, tasks, mockSaveTasks, mockDisplayTasks);
@@ -72,7 +72,7 @@ describe('editTask', () => {
   });
 
   test('should not update the name of a task if the ID does not exist', () => {
-    // Test case: ID does not exist, expect no changes to the task array
+    // ID does not exist, expect no changes to the task array
     const taskId = 4;
     const newName = 'New Task Name';
     editTask(taskId, newName, tasks, mockSaveTasks, mockDisplayTasks);
@@ -80,7 +80,7 @@ describe('editTask', () => {
   });
 
   test('should call saveTasks and displayTasks functions after updating a task', () => {
-    // Test case: Expect saveTasks and displayTasks functions to be called
+    // Expect saveTasks and displayTasks functions to be called
     const taskId = 1;
     const newName = 'Updated Task Name';
     editTask(taskId, newName, tasks, mockSaveTasks, mockDisplayTasks);
