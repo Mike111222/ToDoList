@@ -8,7 +8,7 @@ describe('addTask function', () => {
   it('should add a new task to an empty array', () => {
     const tasks = [];
     const taskInput = { value: 'Buy groceries' };
-    
+
     const result = addTask(taskInput, tasks);
 
     // Assert: Check that the task was added to the array
