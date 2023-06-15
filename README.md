@@ -25,6 +25,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [To run the project](#to-run-the-project)
+    - [To run the test](#to-run-the-test)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -120,6 +121,15 @@ Clone this repository to your desired folder:
 
 Open index.html file in VS Code, run via live server extension and see how the code works. You can also visit the Live Demo Link to see how the Project works online.
 
+### To run the test
+Make sure you are in the project folder
+
+- [x] Make sure you have node.js install
+- [x] npm install 
+- [x] npm i -D jest
+- [x] change your your test script to jest (optional: --coverage)
+- [x] Run npm test
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 Use index.html file.
 
@@ -129,10 +139,15 @@ Use index.html file.
 
 👤 **Muhammad Amran Khan [Mike]**
 
-
 - GitHub: [@githubhandle](https://github.com/Mike111222)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/Mike111222)
 - Twitter: [@twitterhandle](https://twitter.com/iMike111222)
+
+👤 **Ayomide Sunday Emmanuel [Paulinelali]**
+
+- GitHub: [@githubhandle](https://github.com/Paulinelali)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ayomide-emmanuel-1353b31b9/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
