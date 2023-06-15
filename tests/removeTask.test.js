@@ -1,42 +1,36 @@
 // Import the necessary modules for the tests
-import Task from '../src/modules/taskList.js';
-import addTask from '../src/modules/addTask.js';
+import removeTask from '../src/modules/removeTask.js'; // Import the removeTask module from the specified file
+import tasks from '../__mock__/localStorage.js'; // Import the tasks array from the specified file
 
-// Test suite for the addTask function
-describe('addTask function', () => {
-  // Test case 1: Adding a new task to an empty array
-  it('should add a new task to an empty array', () => {
-    const tasks = [];
-    const taskInput = { value: 'Buy groceries' };
+describe('removeTask', () => {
+  // Test case: Removing a task with a given id
+  test('should remove task with given id', () => {
+    const updatedTasks = removeTask(2, tasks); // Call the removeTask function with the task id and tasks array
 
-    const result = addTask(taskInput, tasks);
-
-    // Assert: Check that the task was added to the array
-    expect(result).toEqual([new Task('Buy groceries', false, 1)]);
+    // Assert: Check that the task with the given id was removed
+    expect(updatedTasks).toEqual([
+      { id: 1, name: 'Task 1', status: false },
+      { id: 2, name: 'Task 3', status: false },
+    ]); // Check that the result is an array with the expected tasks
   });
 
-  // Test case 2: Adding a new task to a non-empty array
-  it('should add a new task to a non-empty array', () => {
-    const tasks = [new Task('Buy groceries', false, 1)];
-    const taskInput = { value: 'Do laundry' };
+  // Test case: Not removing a task if the id is not found
+  test('should not remove task if id not found', () => {
+    const updatedTasks = removeTask(4, tasks); // Call the removeTask function with an id that doesn't exist
 
-    const result = addTask(taskInput, tasks);
-
-    // Assert: Check that the task was added to the array
-    expect(result).toEqual([
-      new Task('Buy groceries', false, 1),
-      new Task('Do laundry', false, 2),
-    ]);
+    // Assert: Check that the tasks array remains unchanged
+    expect(updatedTasks).toEqual([
+      { id: 1, name: 'Task 1', status: false },
+      { id: 2, name: 'Task 2', status: true },
+      { id: 3, name: 'Task 3', status: false },
+    ]); // Check that the result is the same as the original tasks array
   });
 
-  // Test case 3: Not adding a new task if the input is empty
-  it('should not add a new task if the input is empty', () => {
-    const tasks = [];
-    const taskInput = { value: '' };
+  // Test case: Returning a new array and not modifying the original
+  test('should return a new array and not modify the original', () => {
+    const updatedTasks = removeTask(2, tasks); // Call the removeTask function with an id
 
-    const result = addTask(taskInput, tasks);
-
-    // Assert: Check that the array is still empty
-    expect(result).toEqual([]);
+    // Assert: Check that the returned array is a new instance and not the same as the original tasks array
+    expect(updatedTasks).not.toBe(tasks); // Check that the result is not the same object reference as the original tasks array
   });
 });
