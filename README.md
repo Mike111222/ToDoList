@@ -124,8 +124,8 @@ Open index.html file in VS Code, run via live server extension and see how the c
 ### To run the test
 Make sure you are in the project folder
 
-- [x] Make sure you have node.js install
-- [x] npm install 
+- [x] Make sure you have node.js installed
+- [x] npm installed 
 - [x] npm i -D jest
 - [x] change your your test script to jest (optional: --coverage)
 - [x] Run npm test
@@ -142,13 +142,6 @@ Use index.html file.
 - GitHub: [@githubhandle](https://github.com/Mike111222)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/Mike111222)
 - Twitter: [@twitterhandle](https://twitter.com/iMike111222)
-
-👤 **Ayomide Sunday Emmanuel [Paulinelali]**
-
-- GitHub: [@githubhandle](https://github.com/Paulinelali)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ayomide-emmanuel-1353b31b9/)
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
